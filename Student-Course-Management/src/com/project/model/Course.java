@@ -12,16 +12,18 @@ public class Course {
         this.credits = credits;
     }
 
-    String getCourseId() {
+    public String getCourseId() {
         return this.courseId;
     }
 
-    String getCourseName() {
+    public String getCourseName() {
         return this.courseName;
     }
 
-    int getCredits() {
-        return this.credits;
+    public int getCredits() { return this.credits; }
+
+    public void displayInfo(){
+        System.out.printf("CourseId: %s, CourseName: %s, Credits: %d", this.courseId, this.courseName, this.credits);
     }
 
 }
